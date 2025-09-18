@@ -1,0 +1,13 @@
+@use "../util" as *;
+
+:root {
+  --fs-40-56: #{clamp(rem(40), 1.085rem + 3.774vw, rem(56))};
+  --fs-32-40: #{clamp(rem(32), 1.292rem + 1.887vw, rem(40))};
+  --fs-32: #{rem(32)};
+  --fs-20: #{rem(20)};
+  --fs-18: #{rem(18)};
+  --fs-15: #{rem(15)};
+
+  --ff-inter: "Inter", Arial, Helvetica, sans-serif;
+  --ff-mono: "Space-mono", "Courier New", Courier, monospace;
+}

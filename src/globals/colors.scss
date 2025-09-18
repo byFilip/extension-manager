@@ -1,0 +1,36 @@
+@use "../util" as *;
+
+:root {
+  // Neutral
+  --c-neutral-900: hsl(227, 75%, 14%);
+  --c-neutral-800: hsl(226, 25%, 17%);
+  --c-neutral-700: hsl(225, 23%, 24%);
+  --c-neutral-600: hsl(226, 11%, 37%);
+  --c-neutral-300: hsl(0, 0%, 78%);
+  --c-neutral-200: hsl(217, 61%, 90%);
+  --c-neutral-100: hsl(0, 0%, 93%);
+  --c-neutral-0: hsl(200, 60%, 99%);
+
+  // Red
+  --c-red-400: hsl(3, 86%, 64%);
+  --c-red-500: hsl(3, 71%, 56%);
+  --c-red-700: hsl(3, 77%, 44%);
+
+  // Gradient
+  --c-gradient-light-1: #ebf2fc;
+  --c-gradient-light-2: #eef8f9;
+  --c-gradient-dark-1: #040918;
+  --c-gradient-dark-2: #091540;
+
+  // Var
+  --gradient-light: linear-gradient(
+    180deg,
+    var(--c-gradient-light-1) 0%,
+    var(--c-gradient-light-2) 100%
+  );
+  --gradient-dark: linear-gradient(
+    180deg,
+    var(--c-gradient-dark-1) 0%,
+    var(--c-gradient-dark-2) 100%
+  );
+}

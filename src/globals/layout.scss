@@ -1,0 +1,33 @@
+@use '../util' as *;
+
+.wrapper {
+  width: min(rem(1024), calc(100% - rem(32)));
+  margin-inline: auto;
+}
+
+.grid {
+  display: grid;
+  gap: rem(64);
+
+  @include breakpoint(large) {
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: rem(300) auto auto;
+    gap: rem(30);
+  }
+}
+
+.noscroll {
+  overflow-y: hidden;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
+}
