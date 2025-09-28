@@ -1,0 +1,47 @@
+@use "../util" as *;
+
+.list {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: rem(20);
+
+  margin-block: rem(50);
+
+  &__heading {
+    font-size: var(--font-list-heading);
+    text-align: center;
+  }
+
+  &__buttons {
+    display: flex;
+    justify-items: center;
+    gap: rem(10);
+  }
+
+  &__button {
+    padding-inline: rem(18);
+    padding-block: rem(8);
+
+    background: var(--element-background);
+    border-radius: rem(50);
+    font-size: rem(20);
+    color: var(--font);
+    border: 1.5px solid var(--border);
+    box-shadow: 0 0 20px var(--border-shadow);
+    transition: background 150ms ease-in-out, color 150ms ease-in-out,
+      border-color 150ms ease-in-out;
+
+    &:hover {
+      background: var(--button-hover);
+      border-color: var(--button-hover);
+    }
+
+    &.is-active {
+      background: var(--button-active);
+      color: var(--button-active-text);
+      border-color: var(--button-active-border);
+    }
+  }
+}

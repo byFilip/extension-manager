@@ -1,1 +1,24 @@
-@use '../util' as *;
+@use "../util" as *;
+
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  padding-inline: rem(10);
+  padding-block: rem(8);
+
+  background-color: var(--element-background);
+  border-radius: rem(10);
+  border: 1.5px solid var(--header-border);
+  box-shadow: 0 0 20px var(--border-shadow);
+
+  &__button {
+    border: none;
+    background: var(--header-button);
+    padding: rem(10);
+    border-radius: rem(10);
+  }
+}
+
+

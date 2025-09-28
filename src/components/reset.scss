@@ -1,0 +1,24 @@
+@use '../util' as *;
+
+.reset {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-block-start: rem(30);
+
+  &__button {
+    padding-inline: rem(25);
+    padding-block: rem(12);
+    color: var(--font);
+    font-size: var(--font-card-text);
+    background: none;
+    border-radius: rem(50);
+    border: 1.5px solid var(--font);
+    transition: background 150ms ease-in-out, color 150ms ease-in-out;
+
+    &:hover {
+      background: var(--font);
+      color: var(--button-active-text);
+    }
+  }
+}

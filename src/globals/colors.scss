@@ -22,7 +22,7 @@
   --c-gradient-dark-1: #040918;
   --c-gradient-dark-2: #091540;
 
-  // Var
+  // gradient
   --gradient-light: linear-gradient(
     180deg,
     var(--c-gradient-light-1) 0%,
@@ -33,4 +33,88 @@
     var(--c-gradient-dark-1) 0%,
     var(--c-gradient-dark-2) 100%
   );
+  --html-background: var(--c-neutral-600);
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --body-background: var(--gradient-dark);
+    --element-background: var(--c-neutral-800);
+    --border: var(--c-neutral-600);
+    --border-shadow: none;
+    --header-button: var(--c-neutral-700);
+    --font: var(--c-neutral-100);
+    --button-hover: var(--c-neutral-600);
+    --button-active: var(--c-red-500);
+    --button-active-text: var(--c-neutral-900);
+    --button-active-border: var(--c-red-500);
+    --toggle-inactive-background: var(--c-neutral-600);
+    --toggle-active-background: var(--c-red-500);
+    --toggle-button: var(--c-neutral-0);
+    --card-text: var(--c-neutral-300);
+    --remove-button-border: var(--c-neutral-600);
+    --remove-text: var(--c-neutral-300);
+    --header-border: none;
+
+    .header__logo path:nth-child(1) {
+      fill: #f25c54;
+    }
+    .header__logo path:nth-child(2) {
+      fill: #fbfdfe;
+    }
+  }
+}
+
+body.light {
+  --body-background: var(--gradient-light);
+  --element-background: var(--c-neutral-0);
+  --border: var(--c-neutral-200);
+  --border-shadow: var(--c-neutral-200);
+  --header-button: var(--c-neutral-100);
+  --font: var(--c-neutral-900);
+  --button-hover: var(--c-neutral-300);
+  --button-active: var(--c-red-700);
+  --button-active-text: var(--c-neutral-0);
+  --button-active-border: var(--c-red-700);
+  --toggle-inactive-background: var(--c-neutral-300);
+  --toggle-active-background: var(--c-red-700);
+  --toggle-button: var(--c-neutral-0);
+  --card-text: var(--c-neutral-600);
+  --remove-button-border: var(--c-neutral-300);
+  --remove-text: var(--c-neutral-900);
+  --header-border: 1.5px solid var(--border);
+
+  .header__logo path:nth-child(1) {
+    fill: #c7231a;
+  }
+  .header__logo path:nth-child(2) {
+    fill: #091540;
+  }
+}
+
+body.dark {
+  --body-background: var(--gradient-dark);
+  --element-background: var(--c-neutral-800);
+  --border: var(--c-neutral-600);
+  --border-shadow: none;
+  --header-button: var(--c-neutral-700);
+  --font: var(--c-neutral-100);
+  --button-hover: var(--c-neutral-600);
+  --button-active: var(--c-red-500);
+  --button-active-text: var(--c-neutral-900);
+  --button-active-border: var(--c-red-500);
+  --toggle-inactive-background: var(--c-neutral-600);
+  --toggle-active-background: var(--c-red-500);
+  --toggle-button: var(--c-neutral-0);
+  --card-text: var(--c-neutral-300);
+  --remove-button-border: var(--c-neutral-600);
+  --remove-text: var(--c-neutral-300);
+  --header-border: none;
+
+  .header__logo path:nth-child(1) {
+    fill: #f25c54;
+  }
+  .header__logo path:nth-child(2) {
+    fill: #fbfdfe;
+  }
 }

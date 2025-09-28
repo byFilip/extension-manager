@@ -1,33 +1,49 @@
-@use '../util' as *;
+@use "../util" as *;
 
-.wrapper {
-  width: min(rem(1024), calc(100% - rem(32)));
-  margin-inline: auto;
+body {
+  padding-block: rem(20) rem(40);
+  padding-inline: rem(20);
 }
 
-.grid {
-  display: grid;
-  gap: rem(64);
+@include breakpoint(medium) {
+  body {
+    padding-block: rem(30) rem(50);
+    padding-inline: rem(30);
+  }
+  
+  main {
+    max-width: rem(900);
 
-  @include breakpoint(large) {
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: rem(300) auto auto;
-    gap: rem(30);
+  }
+
+  .list {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .cards {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .card {
+    height: rem(220);
+  }
+
+  .reset {
+    margin-block-start: rem(40);
   }
 }
 
-.noscroll {
-  overflow-y: hidden;
-}
+@include breakpoint(large) {
+  body {
+  }
+  
+  main {
+    max-width: rem(1300);
 
-.visually-hidden {
-  position: absolute;
-  width: 1px;
-  height: 1px;
-  padding: 0;
-  margin: -1px;
-  overflow: hidden;
-  clip: rect(0, 0, 0, 0);
-  white-space: nowrap;
-  border: 0;
+  }
+
+  .cards {
+    grid-template-columns: repeat(3, 1fr);
+  }
 }

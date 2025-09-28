@@ -1,13 +1,35 @@
 @use "../util" as *;
 
+/* noto-sans-regular - latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: 'Noto Sans';
+  font-style: normal;
+  font-weight: 400;
+  src: url('../../assets/fonts/noto-sans-v42-latin-regular.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+/* noto-sans-500 - latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: 'Noto Sans';
+  font-style: normal;
+  font-weight: 500;
+  src: url('../../assets/fonts/noto-sans-v42-latin-500.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+/* noto-sans-700 - latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: 'Noto Sans';
+  font-style: normal;
+  font-weight: 700;
+  src: url('../../assets/fonts/noto-sans-v42-latin-700.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+};
+
 :root {
   --fs-40-56: #{clamp(rem(40), 1.085rem + 3.774vw, rem(56))};
   --fs-32-40: #{clamp(rem(32), 1.292rem + 1.887vw, rem(40))};
-  --fs-32: #{rem(32)};
-  --fs-20: #{rem(20)};
-  --fs-18: #{rem(18)};
-  --fs-15: #{rem(15)};
 
-  --ff-inter: "Inter", Arial, Helvetica, sans-serif;
-  --ff-mono: "Space-mono", "Courier New", Courier, monospace;
+  --font-list-heading: #{rem(35)};
+  --font-card-name: #{rem(20)};
+  --font-card-text: #{rem(15)};
 }
