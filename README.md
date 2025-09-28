@@ -17,4 +17,4 @@ Built with **HTML, SCSS, and JavaScript**.
 
 1. Clone the repository:
    ```bash
-   git clone https://github.com/your-username/extension-manager.git
+   git clone https://github.com/byFilip/extension-manager.git
