@@ -1,0 +1,671 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="/assets/favicon-32x32-DQjEQYWa.png"
+    />
+
+    <title>Browser extensions manager</title>
+    <script type="module" crossorigin src="/assets/index-eU4WgdkY.js"></script>
+    <link rel="stylesheet" crossorigin href="/assets/index-Dzeg0eaS.css">
+  </head>
+
+  <body class="light">
+    <main>
+      <h1 class="visually-hidden">Extension manager</h1>
+      <header class="header">
+        <svg
+          class="header__logo"
+          xmlns="http://www.w3.org/2000/svg"
+          width="179"
+          height="41"
+          fill="none"
+          viewBox="0 0 179 41"
+        >
+          <path
+            fill="#C7231A"
+            fill-rule="evenodd"
+            d="M13.715.516c-2.257 0-4.42.896-6.016 2.492L0 10.707v3.524c0 2.49 1.07 4.73 2.774 6.285A8.485 8.485 0 0 0 0 26.802v3.524l7.699 7.698A8.507 8.507 0 0 0 20 37.742a8.508 8.508 0 0 0 12.301.282L40 30.326v-3.524c0-2.49-1.07-4.73-2.774-6.286A8.485 8.485 0 0 0 40 14.231v-3.524l-7.699-7.7A8.508 8.508 0 0 0 20 3.29 8.485 8.485 0 0 0 13.715.516Zm12.044 20a8.528 8.528 0 0 1-.282-.27L20 14.77l-5.477 5.477a8.528 8.528 0 0 1-.282.27c.096.087.19.177.282.269L20 26.262l5.477-5.476c.092-.093.186-.182.282-.27Zm-3.537 9.81v1.682a4.063 4.063 0 0 0 6.936 2.874l6.398-6.397v-1.683a4.063 4.063 0 0 0-6.937-2.874l-6.397 6.398Zm-4.444 0-6.397-6.398a4.063 4.063 0 0 0-6.937 2.873v1.684l6.397 6.397a4.063 4.063 0 0 0 6.937-2.873v-1.683Zm0-21.302v1.683l-6.397 6.397a4.063 4.063 0 0 1-6.937-2.873v-1.683l6.397-6.397a4.063 4.063 0 0 1 6.937 2.873Zm10.841 8.08-6.397-6.397V9.024a4.063 4.063 0 0 1 6.936-2.873l6.398 6.397v1.683a4.063 4.063 0 0 1-6.937 2.873Z"
+            clip-rule="evenodd"
+          />
+          <path
+            fill="#091540"
+            d="M54.318 29V12.2h11.484v3.096H57.87v3.6h6.72v2.868h-6.72v4.104h8.028V29h-11.58Zm12.818.024 4.368-6.036-4.14-6.108h4.428l2.148 3.684 2.088-3.684h4.32l-4.02 6.036L80.66 29h-4.488l-2.352-3.696-2.388 3.66-4.296.06Zm20.293.336c-1.296 0-2.32-.364-3.072-1.092-.744-.736-1.116-1.844-1.116-3.324V13.388h3.504v3.492h3.012v2.808h-3.012v4.62c0 .712.148 1.212.444 1.5.296.288.692.432 1.188.432.256 0 .504-.028.744-.084.248-.064.476-.152.684-.264l.492 2.76c-.36.2-.792.368-1.296.504a5.92 5.92 0 0 1-1.572.204Zm-6.648-9.672V16.88h2.808v2.808H80.78Zm17.126 9.672c-1.32 0-2.48-.268-3.48-.804a5.853 5.853 0 0 1-2.34-2.244c-.56-.96-.84-2.084-.84-3.372 0-.936.16-1.796.48-2.58a6.052 6.052 0 0 1 1.368-2.028A6.203 6.203 0 0 1 95.171 17c.8-.32 1.676-.48 2.628-.48 1.048 0 1.976.184 2.784.552a5.43 5.43 0 0 1 2.028 1.548c.536.656.908 1.428 1.116 2.316.216.888.236 1.852.06 2.892h-9.288c0 .56.144 1.048.432 1.464.296.416.708.744 1.236.984.536.232 1.16.348 1.872.348.704 0 1.376-.096 2.016-.288a6.426 6.426 0 0 0 1.812-.876l1.164 2.4c-.384.296-.864.56-1.44.792-.576.224-1.188.396-1.836.516a9.422 9.422 0 0 1-1.848.192Zm-3.204-7.944h5.724c-.024-.712-.276-1.276-.756-1.692-.472-.416-1.124-.624-1.956-.624-.832 0-1.524.208-2.076.624-.544.416-.856.98-.936 1.692ZM105.83 29V16.88h3.504v1.368c.464-.608 1.012-1.048 1.644-1.32a5.072 5.072 0 0 1 2.004-.408c1.128 0 2.056.224 2.784.672.736.44 1.28 1.012 1.632 1.716.36.704.54 1.444.54 2.22V29h-3.504v-6.78c0-.768-.216-1.38-.648-1.836-.424-.456-1.04-.684-1.848-.684-.512 0-.964.116-1.356.348-.392.224-.7.54-.924.948-.216.408-.324.88-.324 1.416V29h-3.504Zm19.29.348c-1.08 0-2.076-.14-2.988-.42-.912-.288-1.692-.68-2.34-1.176l1.14-2.448a8.333 8.333 0 0 0 2.052 1.02c.736.24 1.444.36 2.124.36.672 0 1.188-.1 1.548-.3.368-.208.552-.504.552-.888 0-.344-.164-.596-.492-.756-.32-.168-.944-.348-1.872-.54-1.6-.288-2.768-.74-3.504-1.356-.736-.624-1.104-1.48-1.104-2.568 0-.768.212-1.444.636-2.028.432-.584 1.024-1.036 1.776-1.356.752-.328 1.616-.492 2.592-.492.96 0 1.864.132 2.712.396.856.256 1.588.616 2.196 1.08l-1.104 2.46a5.34 5.34 0 0 0-1.104-.672 6.35 6.35 0 0 0-1.296-.444 5.43 5.43 0 0 0-1.32-.168c-.584 0-1.056.1-1.416.3-.36.192-.54.464-.54.816 0 .352.164.612.492.78.328.168.94.352 1.836.552 1.672.352 2.86.82 3.564 1.404.712.576 1.068 1.388 1.068 2.436 0 .808-.22 1.512-.66 2.112-.432.6-1.04 1.068-1.824 1.404-.776.328-1.684.492-2.724.492Zm7.413-.348V16.88h3.504V29h-3.504Zm1.752-14.04a2.26 2.26 0 0 1-1.512-.54c-.424-.368-.636-.856-.636-1.464 0-.616.212-1.104.636-1.464a2.23 2.23 0 0 1 1.512-.552 2.23 2.23 0 0 1 1.512.552c.424.36.636.848.636 1.464 0 .608-.212 1.096-.636 1.464a2.26 2.26 0 0 1-1.512.54Zm10.362 14.4c-1.304 0-2.46-.292-3.468-.876a6.504 6.504 0 0 1-2.376-2.328 6.28 6.28 0 0 1-.852-3.216c0-.856.164-1.668.492-2.436a6.302 6.302 0 0 1 1.392-2.052c.6-.6 1.308-1.072 2.124-1.416.816-.344 1.712-.516 2.688-.516 1.304 0 2.456.292 3.456.876a6.38 6.38 0 0 1 2.364 2.34c.576.968.864 2.036.864 3.204 0 .848-.164 1.66-.492 2.436a6.439 6.439 0 0 1-1.392 2.064 6.547 6.547 0 0 1-2.112 1.404c-.816.344-1.712.516-2.688.516Zm0-3.036c.616 0 1.168-.136 1.656-.408.488-.28.872-.672 1.152-1.176.28-.512.42-1.112.42-1.8 0-.696-.14-1.296-.42-1.8a2.854 2.854 0 0 0-1.14-1.164c-.488-.28-1.044-.42-1.668-.42-.624 0-1.184.14-1.68.42-.488.272-.872.66-1.152 1.164-.272.504-.408 1.104-.408 1.8s.14 1.296.42 1.8c.28.504.664.896 1.152 1.176.488.272 1.044.408 1.668.408ZM153.235 29V16.88h3.504v1.368c.464-.608 1.012-1.048 1.644-1.32a5.072 5.072 0 0 1 2.004-.408c1.128 0 2.056.224 2.784.672.736.44 1.28 1.012 1.632 1.716.36.704.54 1.444.54 2.22V29h-3.504v-6.78c0-.768-.216-1.38-.648-1.836-.424-.456-1.04-.684-1.848-.684-.512 0-.964.116-1.356.348-.392.224-.7.54-.924.948-.216.408-.324.88-.324 1.416V29h-3.504Zm19.291.348c-1.08 0-2.076-.14-2.988-.42-.912-.288-1.692-.68-2.34-1.176l1.14-2.448a8.333 8.333 0 0 0 2.052 1.02c.736.24 1.444.36 2.124.36.672 0 1.188-.1 1.548-.3.368-.208.552-.504.552-.888 0-.344-.164-.596-.492-.756-.32-.168-.944-.348-1.872-.54-1.6-.288-2.768-.74-3.504-1.356-.736-.624-1.104-1.48-1.104-2.568 0-.768.212-1.444.636-2.028.432-.584 1.024-1.036 1.776-1.356.752-.328 1.616-.492 2.592-.492.96 0 1.864.132 2.712.396.856.256 1.588.616 2.196 1.08l-1.104 2.46a5.34 5.34 0 0 0-1.104-.672 6.35 6.35 0 0 0-1.296-.444 5.43 5.43 0 0 0-1.32-.168c-.584 0-1.056.1-1.416.3-.36.192-.54.464-.54.816 0 .352.164.612.492.78.328.168.94.352 1.836.552 1.672.352 2.86.82 3.564 1.404.712.576 1.068 1.388 1.068 2.436 0 .808-.22 1.512-.66 2.112-.432.6-1.04 1.068-1.824 1.404-.776.328-1.684.492-2.724.492Z"
+          />
+        </svg>
+
+        <button class="header__button" aria-label="Toggle dark mode">
+          <svg
+            id="iconMoon"
+            aria-hidden="false"
+            xmlns="http://www.w3.org/2000/svg"
+            width="22"
+            height="22"
+            fill="none"
+            viewBox="0 0 22 22"
+          >
+            <path
+              stroke="#091540"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="1.98"
+              d="M20.125 11.877A7.333 7.333 0 1 1 10.124 1.875a9.168 9.168 0 1 0 10.001 10.002Z"
+            />
+          </svg>
+          <svg
+            id="iconSun"
+            class="is-hidden"
+            aria-hidden="true"
+            xmlns="http://www.w3.org/2000/svg"
+            width="22"
+            height="22"
+            fill="none"
+            viewBox="0 0 22 22"
+            hidden
+          >
+            <path
+              stroke="#FBFDFE"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="1.98"
+              d="M11 1.833v1.834m0 14.666v1.834M3.667 11H1.833m3.955-5.212L4.492 4.492m11.72 1.296 1.297-1.296M5.788 16.215l-1.296 1.296m11.72-1.296 1.297 1.296M20.167 11h-1.834m-2.75 0a4.583 4.583 0 1 1-9.167 0 4.583 4.583 0 0 1 9.167 0Z"
+            />
+          </svg>
+          <span class="visually-hidden">Toggle dark or light mode</span>
+        </button>
+      </header>
+
+      <section class="list">
+        <h2 class="list__heading">
+          Extensions List <span class="visually-hidden">Selection</span>
+        </h2>
+        <div class="list__buttons">
+          <button
+            aria-pressed="true"
+            class="list__button is-active"
+            id="listAll"
+          >
+            All
+          </button>
+          <button aria-pressed="false" class="list__button" id="listActive">
+            Active
+          </button>
+          <button aria-pressed="false" class="list__button" id="listInactive">
+            Inactive
+          </button>
+        </div>
+      </section>
+
+      <section class="cards">
+        <h2 class="visually-hidden">Extensions List</h2>
+
+        <div class="card">
+          <div class="card__content">
+            <img
+              src="data:image/svg+xml,%3csvg%20xmlns='http://www.w3.org/2000/svg'%20width='60'%20height='60'%20fill='none'%20viewBox='0%200%2060%2060'%3e%3cpath%20fill='%23BFD8BD'%20d='M0%2010C0%204.477%204.477%200%2010%200h40c5.523%200%2010%204.477%2010%2010v40c0%205.523-4.477%2010-10%2010H10C4.477%2060%200%2055.523%200%2050V10Z'/%3e%3cpath%20fill='%23091540'%20fill-rule='evenodd'%20d='M23.675%2015.75c-2.39%200-4.39.851-5.789%202.352-1.393%201.494-2.135%203.573-2.135%205.937v1.074h28.498V24.04c0-2.363-.737-4.442-2.129-5.937-1.397-1.501-3.397-2.352-5.794-2.352h-12.65Zm-2.24%204.951a1.125%201.125%200%200%200%200%202.25h.082a1.125%201.125%200%200%200%200-2.25h-.083Zm3.728%200a1.125%201.125%200%200%200%200%202.25h.083a1.125%201.125%200%200%200%200-2.25h-.083Zm3.73%200a1.125%201.125%200%200%200%200%202.25h.082a1.125%201.125%200%200%200%200-2.25h-.083Z'%20clip-rule='evenodd'/%3e%3cpath%20fill='%23091540'%20d='M29.49%2032.25a2.821%202.821%200%201%200%200%205.642%202.821%202.821%200%200%200%200-5.642Z'/%3e%3cpath%20fill='%23091540'%20fill-rule='evenodd'%20d='M15.75%2035.96v-8.597h28.5v8.596c0%202.364-.738%204.443-2.13%205.938-1.398%201.5-3.398%202.352-5.795%202.352h-12.65c-2.396%200-4.397-.852-5.794-2.352-1.392-1.495-2.13-3.574-2.13-5.938Zm8.669-.889a5.071%205.071%200%201%201%209.324%202.763l1.509%201.509a1.125%201.125%200%201%201-1.591%201.59l-1.532-1.531a5.071%205.071%200%200%201-7.71-4.33Z'%20clip-rule='evenodd'/%3e%3c/svg%3e"
+              alt="DevLens extension"
+            />
+            <div class="card__description">
+              <h3 class="card__name">DevLens</h3>
+              <p class="card__text">
+                Quickly inspect page layouts and visualize element boundaries.
+              </p>
+            </div>
+          </div>
+          <div class="card__controls">
+            <button class="card__remove">Remove</button>
+
+            <fieldset class="card__toggle toggle" role="radiogroup">
+              <legend class="visually-hidden">Card activate toggle</legend>
+
+              <div class="toggle__wrapper">
+                <input
+                  id="notActive-devlens"
+                  name="activate-toggle-devlens"
+                  type="radio"
+                />
+                <input
+                  id="active-devlens"
+                  name="activate-toggle-devlens"
+                  type="radio"
+                  checked
+                />
+
+                <span class="toggle__background" aria-hidden="true"></span>
+                <span class="toggle__button" aria-hidden="true"></span>
+
+                <label for="notActive-devlens" class="visually-hidden"
+                  >Deactivate</label
+                >
+                <label for="active-devlens" class="visually-hidden"
+                  >Activate</label
+                >
+              </div>
+            </fieldset>
+          </div>
+        </div>
+
+        <div class="card">
+          <div class="card__content">
+            <img
+              src="data:image/svg+xml,%3csvg%20xmlns='http://www.w3.org/2000/svg'%20width='60'%20height='60'%20fill='none'%20viewBox='0%200%2060%2060'%3e%3cpath%20fill='%23A9D6E5'%20d='M0%2010C0%204.477%204.477%200%2010%200h40c5.523%200%2010%204.477%2010%2010v40c0%205.523-4.477%2010-10%2010H10C4.477%2060%200%2055.523%200%2050V10Z'/%3e%3cpath%20fill='%23091540'%20fill-rule='evenodd'%20d='M19.32%2019.197C20.633%2017.788%2022.502%2017%2024.71%2017h11.246c2.212%200%204.082.788%205.394%202.197%201.305%201.4%201.983%203.335%201.983%205.505v10.596c0%202.17-.678%204.104-1.983%205.505C40.038%2042.213%2038.167%2043%2035.955%2043H24.71c-2.213%200-4.083-.788-5.395-2.197-1.304-1.401-1.982-3.335-1.982-5.505V24.702c0-2.171.682-4.105%201.987-5.506Zm1.463%201.363c-.903.969-1.45%202.386-1.45%204.142v10.596c0%201.757.545%203.174%201.446%204.142.894.96%202.212%201.56%203.93%201.56h11.246c1.718%200%203.038-.6%203.932-1.56.901-.968%201.446-2.385%201.446-4.142V24.702c0-1.757-.545-3.174-1.446-4.142-.894-.96-2.213-1.56-3.931-1.56H24.709c-1.711%200-3.03.6-3.926%201.56Z'%20clip-rule='evenodd'/%3e%3cpath%20fill='%23091540'%20fill-rule='evenodd'%20d='M23.685%2024.188a1%201%200%200%201%201-1h2.644a1%201%200%201%201%200%202h-1.644v9.631h1.644a1%201%200%201%201%200%202h-2.644a1%201%200%200%201-1-1V24.187ZM32.339%2024.188a1%201%200%200%201%201-1h2.644a1%201%200%200%201%201%201v11.631a1%201%200%200%201-1%201h-2.644a1%201%200%200%201%200-2h1.644v-9.632h-1.644a1%201%200%200%201-1-1Z'%20clip-rule='evenodd'/%3e%3c/svg%3e"
+              alt="Style Spy extension"
+            />
+            <div class="card__description">
+              <h3 class="card__name">StyleSpy</h3>
+              <p class="card__text">
+                Instantly analyze and copy CSS from any webpage element.
+              </p>
+            </div>
+          </div>
+          <div class="card__controls">
+            <button class="card__remove">Remove</button>
+
+            <fieldset class="card__toggle toggle" role="radiogroup">
+              <legend class="visually-hidden">Card activate toggle</legend>
+
+              <div class="toggle__wrapper">
+                <input
+                  id="notActive-stylespy"
+                  name="activate-toggle-stylespy"
+                  type="radio"
+                />
+                <input
+                  id="active-stylespy"
+                  name="activate-toggle-stylespy"
+                  type="radio"
+                  checked
+                />
+
+                <span class="toggle__background" aria-hidden="true"></span>
+                <span class="toggle__button" aria-hidden="true"></span>
+
+                <label for="notActive-stylespy" class="visually-hidden">
+                  Deactivate
+                </label>
+                <label for="active-stylespy" class="visually-hidden">
+                  Activate
+                </label>
+              </div>
+            </fieldset>
+          </div>
+        </div>
+
+        <div class="card">
+          <div class="card__content">
+            <img
+              src="data:image/svg+xml,%3csvg%20xmlns='http://www.w3.org/2000/svg'%20width='60'%20height='60'%20fill='none'%20viewBox='0%200%2060%2060'%3e%3cpath%20fill='%23FFCFD2'%20d='M0%2010C0%204.477%204.477%200%2010%200h40c5.523%200%2010%204.477%2010%2010v40c0%205.523-4.477%2010-10%2010H10C4.477%2060%200%2055.523%200%2050V10Z'/%3e%3cpath%20fill='%23091540'%20fill-rule='evenodd'%20d='m35.532%2028.321-3.92%203.92a.967.967%200%200%201-.706.294.989.989%200%200%201-.707-.294%201.006%201.006%200%200%201%200-1.413l3.92-3.92a1.006%201.006%200%200%201%201.413%200c.4.387.4%201.027%200%201.413Zm-4.613-7.626c-6%200-10.88%204.88-10.88%2010.88%200%20.136.003.273.008.407a.396.396%200%200%200%20.398.38h4.474a2.658%202.658%200%200%201%202.659%202.862c-.022.266.168.524.435.524h.226a2.666%202.666%200%200%201%202.583%203.323c-.059.23.1.477.337.477a2.66%202.66%200%200%201%202.58%202.018c.06.247.305.425.547.346%204.357-1.417%207.513-5.51%207.513-10.337%200-6-4.88-10.88-10.88-10.88ZM28.122%2018.786h5.611a1%201%200%200%200%200-2h-5.61a1%201%200%200%200%200%202Z'%20clip-rule='evenodd'/%3e%3cpath%20fill='%23091540'%20fill-rule='evenodd'%20d='M29.233%2038.413a1%201%200%200%200-1-1h-5.721a1%201%200%200%200%200%202h5.721a1%201%200%200%200%201-1ZM31.152%2041.214h-5.721a1%201%200%200%200%200%202h5.721a1%201%200%200%200%200-2ZM25.924%2035.026a1%201%200%200%200-1-1H19.2a1%201%200%200%200%200%202h5.723a1%201%200%200%200%201-1Z'%20clip-rule='evenodd'/%3e%3c/svg%3e"
+              alt="Speed Boost extension"
+            />
+            <div class="card__description">
+              <h3 class="card__name">SpeedBoost</h3>
+              <p class="card__text">
+                Optimizes browser resource usage to accelerate page loading.
+              </p>
+            </div>
+          </div>
+          <div class="card__controls">
+            <button class="card__remove">Remove</button>
+
+            <fieldset class="card__toggle toggle" role="radiogroup">
+              <legend class="visually-hidden">Card activate toggle</legend>
+
+              <div class="toggle__wrapper">
+                <input
+                  id="notActive-speedboost"
+                  name="activate-toggle-speedboost"
+                  type="radio"
+                />
+                <input
+                  id="active-speedboost"
+                  name="activate-toggle-speedboost"
+                  type="radio"
+                  checked
+                />
+
+                <span class="toggle__background" aria-hidden="true"></span>
+                <span class="toggle__button" aria-hidden="true"></span>
+
+                <label for="notActive-speedboost" class="visually-hidden">
+                  Deactivate
+                </label>
+                <label for="active-speedboost" class="visually-hidden">
+                  Activate
+                </label>
+              </div>
+            </fieldset>
+          </div>
+        </div>
+
+        <div class="card">
+          <div class="card__content">
+            <img
+              src="data:image/svg+xml,%3csvg%20xmlns='http://www.w3.org/2000/svg'%20width='60'%20height='60'%20fill='none'%20viewBox='0%200%2060%2060'%3e%3cpath%20fill='%23F1C0E8'%20d='M0%2010C0%204.477%204.477%200%2010%200h40c5.523%200%2010%204.477%2010%2010v40c0%205.523-4.477%2010-10%2010H10C4.477%2060%200%2055.523%200%2050V10Z'/%3e%3cpath%20stroke='%23091540'%20stroke-linecap='round'%20stroke-linejoin='round'%20stroke-width='2.333'%20d='M36.553%2016.008c4.58%200%207.447%203.23%207.447%207.81V36.18c0%204.58-2.867%207.812-7.447%207.812H23.432c-4.58%200-7.432-3.232-7.432-7.812V23.818c0-4.58%202.867-7.81%207.432-7.81h6.876m-7.241%2027.97%209.54-10.843a3.176%203.176%200%200%200-.287-4.492l-1.729-1.515a3.18%203.18%200%200%200-4.506.272l-2.123%202.411-7.69%208.707m10.934-5.848%203.246%202.86m6.835-8.508v-.06m-2.083%2010.606v.06m-13.25-14.86v-.06m14.621-.241v-.061'/%3e%3c/svg%3e"
+              alt="JSONWizard extension"
+            />
+            <div class="card__description">
+              <h3 class="card__name">JSONWizard</h3>
+              <p class="card__text">
+                Formats, validates, and prettifies JSON responses in-browser.
+              </p>
+            </div>
+          </div>
+          <div class="card__controls">
+            <button class="card__remove">Remove</button>
+
+            <fieldset class="card__toggle toggle" role="radiogroup">
+              <legend class="visually-hidden">Card activate toggle</legend>
+
+              <div class="toggle__wrapper">
+                <input
+                  id="notActive-jsonwizard"
+                  name="activate-toggle-jsonwizard"
+                  type="radio"
+                />
+                <input
+                  id="active-jsonwizard"
+                  name="activate-toggle-jsonwizard"
+                  type="radio"
+                  checked
+                />
+
+                <span class="toggle__background" aria-hidden="true"></span>
+                <span class="toggle__button" aria-hidden="true"></span>
+
+                <label for="notActive-jsonwizard" class="visually-hidden">
+                  Deactivate
+                </label>
+                <label for="active-jsonwizard" class="visually-hidden">
+                  Activate
+                </label>
+              </div>
+            </fieldset>
+          </div>
+        </div>
+
+        <div class="card">
+          <div class="card__content">
+            <img
+              src="data:image/svg+xml,%3csvg%20xmlns='http://www.w3.org/2000/svg'%20width='60'%20height='60'%20fill='none'%20viewBox='0%200%2060%2060'%3e%3cpath%20fill='%23CFBAF0'%20d='M0%2010C0%204.477%204.477%200%2010%200h40c5.523%200%2010%204.477%2010%2010v40c0%205.523-4.477%2010-10%2010H10C4.477%2060%200%2055.523%200%2050V10Z'/%3e%3cpath%20fill='%23091540'%20fill-rule='evenodd'%20d='M41.585%2028.624a3.741%203.741%200%200%200-2.992-1.478H21.406a3.743%203.743%200%200%200-2.992%201.476%203.744%203.744%200%200%200-.646%203.274l2.2%208.15a3.774%203.774%200%200%200%203.638%202.787h12.786a3.777%203.777%200%200%200%203.638-2.787l2.202-8.149a3.74%203.74%200%200%200-.647-3.273ZM25.248%2019.167h9.5a1%201%200%200%200%200-2h-9.5a1%201%200%200%200%200%202ZM21.576%2023.67h16.846a1%201%200%200%200%200-2H21.576a1%201%200%200%200%200%202Z'%20clip-rule='evenodd'/%3e%3c/svg%3e"
+              alt="TabMaster Pro extension"
+            />
+            <div class="card__description">
+              <h3 class="card__name">TabMaster Pro</h3>
+              <p class="card__text">
+                Organizes browser tabs into groups and sessions.
+              </p>
+            </div>
+          </div>
+          <div class="card__controls">
+            <button class="card__remove">Remove</button>
+
+            <fieldset class="card__toggle toggle" role="radiogroup">
+              <legend class="visually-hidden">Card activate toggle</legend>
+
+              <div class="toggle__wrapper">
+                <input
+                  id="notActive-tabmaster"
+                  name="activate-toggle-tabmaster"
+                  type="radio"
+                />
+                <input
+                  id="active-tabmaster"
+                  name="activate-toggle-tabmaster"
+                  type="radio"
+                  checked
+                />
+
+                <span class="toggle__background" aria-hidden="true"></span>
+                <span class="toggle__button" aria-hidden="true"></span>
+
+                <label for="notActive-tabmaster" class="visually-hidden">
+                  Deactivate
+                </label>
+                <label for="active-tabmaster" class="visually-hidden">
+                  Activate
+                </label>
+              </div>
+            </fieldset>
+          </div>
+        </div>
+
+        <div class="card">
+          <div class="card__content">
+            <img
+              src="data:image/svg+xml,%3csvg%20xmlns='http://www.w3.org/2000/svg'%20width='60'%20height='60'%20fill='none'%20viewBox='0%200%2060%2060'%3e%3cpath%20fill='%23A3C4F3'%20d='M0%2010C0%204.477%204.477%200%2010%200h40c5.523%200%2010%204.477%2010%2010v40c0%205.523-4.477%2010-10%2010H10C4.477%2060%200%2055.523%200%2050V10Z'/%3e%3cpath%20fill='%23091540'%20fill-rule='evenodd'%20d='M20.13%2020.32c1.19-1.276%202.882-1.987%204.87-1.987h2.641a1%201%200%200%201%200%202h-2.64c-1.494%200-2.636.522-3.409%201.352-.78.837-1.259%202.068-1.259%203.605v9.42c0%201.539.477%202.77%201.256%203.606.77.828%201.912%201.35%203.412%201.35h9.996c1.5%200%202.642-.522%203.413-1.35.78-.837%201.257-2.068%201.257-3.606v-2.063a1%201%200%200%201%202%200v2.063c0%201.952-.61%203.7-1.793%204.969-1.19%201.277-2.883%201.988-4.877%201.988H25c-1.994%200-3.687-.711-4.876-1.989-1.182-1.269-1.792-3.017-1.792-4.968v-9.42c0-1.953.614-3.7%201.796-4.97Z'%20clip-rule='evenodd'/%3e%3cpath%20fill='%23091540'%20fill-rule='evenodd'%20d='M35.394%2020.333a1%201%200%201%201%200-2h5.272a1%201%200%200%201%201%201v5.272a1%201%200%201%201-2%200v-2.858l-8.09%208.09h2.857a1%201%200%200%201%200%202H29.16a1%201%200%200%201-1-1v-5.27a1%201%200%201%201%202%200v2.856l8.09-8.09h-2.857Z'%20clip-rule='evenodd'/%3e%3c/svg%3e"
+              alt="ViewportBuddy extension"
+            />
+            <div class="card__description">
+              <h3 class="card__name">ViewportBuddy</h3>
+              <p class="card__text">
+                Simulates various screen resolutions directly within the
+                browser.
+              </p>
+            </div>
+          </div>
+          <div class="card__controls">
+            <button class="card__remove">Remove</button>
+
+            <fieldset class="card__toggle toggle" role="radiogroup">
+              <legend class="visually-hidden">Card activate toggle</legend>
+
+              <div class="toggle__wrapper">
+                <input
+                  id="notActive-viewport"
+                  name="activate-toggle-viewport"
+                  type="radio"
+                />
+                <input
+                  id="active-viewport"
+                  name="activate-toggle-viewport"
+                  type="radio"
+                  checked
+                />
+
+                <span class="toggle__background" aria-hidden="true"></span>
+                <span class="toggle__button" aria-hidden="true"></span>
+
+                <label for="notActive-viewport" class="visually-hidden">
+                  Deactivate
+                </label>
+                <label for="active-viewport" class="visually-hidden">
+                  Activate
+                </label>
+              </div>
+            </fieldset>
+          </div>
+        </div>
+
+        <div class="card">
+          <div class="card__content">
+            <img
+              src="data:image/svg+xml,%3csvg%20xmlns='http://www.w3.org/2000/svg'%20width='60'%20height='60'%20fill='none'%20viewBox='0%200%2060%2060'%3e%3cpath%20fill='%2390DBF4'%20d='M0%2010C0%204.477%204.477%200%2010%200h40c5.523%200%2010%204.477%2010%2010v40c0%205.523-4.477%2010-10%2010H10C4.477%2060%200%2055.523%200%2050V10Z'/%3e%3cpath%20fill='%23091540'%20fill-rule='evenodd'%20d='M36.358%2023.648c.897.01%202.144.014%203.201.01.541-.002.816-.655.442-1.05-.68-.712-1.624-1.705-2.574-2.702l-2.606-2.738c-.386-.404-1.058-.126-1.058.434v3.425c0%201.437%201.172%202.621%202.595%202.621Z'%20clip-rule='evenodd'/%3e%3cpath%20fill='%23091540'%20fill-rule='evenodd'%20d='M29.558%2033.507h-6.306a1%201%200%201%201%200-2h6.306a1%201%200%200%201%200%202Zm-6.307-7.504h3.292a1%201%200%200%201%200%202H23.25a1%201%200%201%201%200-2Zm10.743%205.819a4.078%204.078%200%200%201%205.565-1.494l1.04.602c.043.024.076.057.116.084V26.13a.58.58%200%200%200-.579-.584h-3.95c-2.354-.013-4.296-1.963-4.296-4.34v-4.185a.593.593%200%200%200-.592-.598h-6.871c-3.203%200-5.803%202.638-5.803%205.86v14.008c0%203.38%202.728%206.122%206.074%206.122h5.778c-.05-.152-.11-.3-.142-.459l-.18-.892a5.248%205.248%200%200%201%20.6-3.632l3.24-5.61Z'%20clip-rule='evenodd'/%3e%3cpath%20fill='%23091540'%20fill-rule='evenodd'%20d='m39.322%2034.975-3.237%205.606c-.19.328-.492.576-.848.699l-.9.275-.179-.896c-.073-.371-.01-.758.18-1.086l3.237-5.608a.411.411%200%200%201%20.558-.149l1.04.6a.41.41%200%200%201%20.15.559Zm.85-2.291-1.04-.6a2.41%202.41%200%200%200-3.287.881l-3.24%205.61a3.57%203.57%200%200%200-.408%202.474l.178.895a2.025%202.025%200%200%200%202.635%201.524l.868-.295a3.563%203.563%200%200%200%201.939-1.592l3.238-5.608a2.415%202.415%200%200%200-.882-3.289Z'%20clip-rule='evenodd'/%3e%3c/svg%3e"
+              alt="Markup Notes extension"
+            />
+            <div class="card__description">
+              <h3 class="card__name">Markup Notes</h3>
+              <p class="card__text">
+                Enables annotation and notes directly onto webpages for
+                collaborative debugging.
+              </p>
+            </div>
+          </div>
+          <div class="card__controls">
+            <button class="card__remove">Remove</button>
+
+            <fieldset class="card__toggle toggle" role="radiogroup">
+              <legend class="visually-hidden">Card activate toggle</legend>
+
+              <div class="toggle__wrapper">
+                <input
+                  id="notActive-markup"
+                  name="activate-toggle-markup"
+                  type="radio"
+                />
+                <input
+                  id="active-markup"
+                  name="activate-toggle-markup"
+                  type="radio"
+                  checked
+                />
+
+                <span class="toggle__background" aria-hidden="true"></span>
+                <span class="toggle__button" aria-hidden="true"></span>
+
+                <label for="notActive-markup" class="visually-hidden">
+                  Deactivate
+                </label>
+                <label for="active-markup" class="visually-hidden">
+                  Activate
+                </label>
+              </div>
+            </fieldset>
+          </div>
+        </div>
+
+        <div class="card">
+          <div class="card__content">
+            <img
+              src="data:image/svg+xml,%3csvg%20xmlns='http://www.w3.org/2000/svg'%20width='60'%20height='60'%20fill='none'%20viewBox='0%200%2060%2060'%3e%3cpath%20fill='%23B8B8FF'%20d='M0%2010C0%204.477%204.477%200%2010%200h40c5.523%200%2010%204.477%2010%2010v40c0%205.523-4.477%2010-10%2010H10C4.477%2060%200%2055.523%200%2050V10Z'/%3e%3cpath%20fill='%23091540'%20fill-rule='evenodd'%20d='M24.403%2034.667H20.93a3.602%203.602%200%200%200-3.598%203.597v.805a3.602%203.602%200%200%200%203.598%203.598h3.472A3.6%203.6%200%200%200%2028%2039.069v-.805a3.6%203.6%200%200%200-3.597-3.597ZM39.07%2017.333h-3.473A3.6%203.6%200%200%200%2032%2020.931v.805a3.6%203.6%200%200%200%203.597%203.597h3.472a3.6%203.6%200%200%200%203.598-3.597v-.805a3.601%203.601%200%200%200-3.598-3.598ZM39.07%2029.333h-3.473A3.6%203.6%200%200%200%2032%2032.931v6.138a3.6%203.6%200%200%200%203.597%203.598h3.472a3.601%203.601%200%200%200%203.598-3.598v-6.138a3.601%203.601%200%200%200-3.598-3.598ZM24.403%2017.333H20.93a3.602%203.602%200%200%200-3.598%203.598v6.138a3.602%203.602%200%200%200%203.598%203.598h3.472A3.6%203.6%200%200%200%2028%2027.069v-6.138a3.6%203.6%200%200%200-3.597-3.598Z'%20clip-rule='evenodd'/%3e%3c/svg%3e"
+              alt="Grid guides extension"
+            />
+            <div class="card__description">
+              <h3 class="card__name">GridGuides</h3>
+              <p class="card__text">
+                Overlay customizable grids and alignment guides on any webpage.
+              </p>
+            </div>
+          </div>
+          <div class="card__controls">
+            <button class="card__remove">Remove</button>
+
+            <fieldset class="card__toggle toggle" role="radiogroup">
+              <legend class="visually-hidden">Card activate toggle</legend>
+
+              <div class="toggle__wrapper">
+                <input
+                  id="notActive-gridguides"
+                  name="activate-toggle-gridguides"
+                  type="radio"
+                />
+                <input
+                  id="active-gridguides"
+                  name="activate-toggle-gridguides"
+                  type="radio"
+                  checked
+                />
+
+                <span class="toggle__background" aria-hidden="true"></span>
+                <span class="toggle__button" aria-hidden="true"></span>
+
+                <label for="notActive-gridguides" class="visually-hidden">
+                  Deactivate
+                </label>
+                <label for="active-gridguides" class="visually-hidden">
+                  Activate
+                </label>
+              </div>
+            </fieldset>
+          </div>
+        </div>
+
+        <div class="card">
+          <div class="card__content">
+            <img
+              src="data:image/svg+xml,%3csvg%20xmlns='http://www.w3.org/2000/svg'%20width='60'%20height='60'%20fill='none'%20viewBox='0%200%2060%2060'%3e%3cpath%20fill='%2398F5E1'%20d='M0%2010C0%204.477%204.477%200%2010%200h40c5.523%200%2010%204.477%2010%2010v40c0%205.523-4.477%2010-10%2010H10C4.477%2060%200%2055.523%200%2050V10Z'/%3e%3cpath%20fill='%23091540'%20fill-rule='evenodd'%20d='M21.599%2018.342a4.342%204.342%200%200%200-4.334%204.334v2.24c0%20.147.12.266.267.266%201.166-.003%205.855-.012%208.134-.013.148%200%20.266-.12.266-.267v-2.226a4.333%204.333%200%200%200-4.333-4.334ZM17.532%2027.157a.266.266%200%200%200-.267.266v4.158c0%20.06.06.108.12.108h8.28c.148%200%20.267-.12.267-.267v-3.986a.266.266%200%200%200-.266-.267c-2.28%200-6.968-.01-8.134-.012ZM21.599%2036.21c.666%200%201.2.546%201.2%201.2%200%20.666-.534%201.2-1.2%201.2-.654%200-1.2-.534-1.2-1.2%200-.654.546-1.2%201.2-1.2Zm-4.067-2.534a.266.266%200%200%200-.267.267v3.4c0%202.4%201.947%204.333%204.334%204.333%202.4%200%204.333-1.933%204.333-4.333v-3.387a.266.266%200%200%200-.266-.267c-2.28%200-6.968-.01-8.134-.013ZM38.637%2023.86c-1.213-3.307-5.08-3.894-7.227-1.747l-3.35%203.324c-.1.1-.157.235-.157.376l-.026%205.22-.013%201.653v.013l-.024%204.593a.267.267%200%200%200%20.455.19l9.355-9.343c1.12-1.12%201.534-2.786.987-4.28ZM38.897%2033.015h-3.041a.534.534%200%200%200-.374.154l-8.186%208.056a.267.267%200%200%200%20.187.457h11.562c1.582%200%203.062-.885%203.726-2.32%201.48-3.204-.836-6.347-3.874-6.347Z'%20clip-rule='evenodd'/%3e%3c/svg%3e"
+              alt="Palette picker extension"
+            />
+            <div class="card__description">
+              <h3 class="card__name">Palette Picker</h3>
+              <p class="card__text">
+                Instantly extracts color palettes from any webpage.
+              </p>
+            </div>
+          </div>
+          <div class="card__controls">
+            <button class="card__remove">Remove</button>
+
+            <fieldset class="card__toggle toggle" role="radiogroup">
+              <legend class="visually-hidden">Card activate toggle</legend>
+
+              <div class="toggle__wrapper">
+                <input
+                  id="notActive-palettepicker"
+                  name="activate-toggle-palettepicker"
+                  type="radio"
+                />
+                <input
+                  id="active-palettepicker"
+                  name="activate-toggle-palettepicker"
+                  type="radio"
+                  checked
+                />
+
+                <span class="toggle__background" aria-hidden="true"></span>
+                <span class="toggle__button" aria-hidden="true"></span>
+
+                <label for="notActive-palettepicker" class="visually-hidden">
+                  Deactivate
+                </label>
+                <label for="active-palettepicker" class="visually-hidden">
+                  Activate
+                </label>
+              </div>
+            </fieldset>
+          </div>
+        </div>
+
+        <div class="card">
+          <div class="card__content">
+            <img
+              src="data:image/svg+xml,%3csvg%20xmlns='http://www.w3.org/2000/svg'%20width='60'%20height='60'%20fill='none'%20viewBox='0%200%2060%2060'%3e%3cpath%20fill='%23FFD8BE'%20d='M0%2010C0%204.477%204.477%200%2010%200h40c5.523%200%2010%204.477%2010%2010v40c0%205.523-4.477%2010-10%2010H10C4.477%2060%200%2055.523%200%2050V10Z'/%3e%3cpath%20fill='%23091540'%20fill-rule='evenodd'%20d='M23.955%2021.853c.738%200%201.334-.596%201.334-1.333V18a1.333%201.333%200%201%200-2.667%200v2.52c0%20.737.596%201.333%201.333%201.333ZM21.85%2023.958c0-.737-.596-1.333-1.333-1.333H18a1.333%201.333%200%201%200%200%202.667h2.516c.737%200%201.333-.596%201.333-1.334ZM36.048%2038.146c-.738%200-1.334.596-1.334%201.333V42a1.333%201.333%200%201%200%202.667%200v-2.52c0-.737-.596-1.333-1.333-1.333ZM42%2034.708h-2.517a1.333%201.333%200%201%200%200%202.667H42a1.332%201.332%200%201%200%200-2.667ZM31.604%2036.127l-1.31%201.316c-2.136%202.129-5.606%202.13-7.736.002a5.48%205.48%200%200%201%200-7.738l1.311-1.308a1.335%201.335%200%200%200-1.883-1.89l-1.313%201.31c-3.17%203.174-3.17%208.337%200%2011.511a8.101%208.101%200%200%200%205.748%202.375c2.084%200%204.17-.792%205.76-2.377l1.314-1.32a1.332%201.332%200%201%200-1.891-1.88ZM41.552%2026.579a8.085%208.085%200%200%200-2.375-5.761c-3.166-3.167-8.326-3.167-11.506%200l-1.32%201.32a1.332%201.332%200%200%200%200%201.885c.52.521%201.364.521%201.885%200l1.319-1.319c2.136-2.128%205.606-2.132%207.737-.001a5.437%205.437%200%200%201%201.593%203.875c0%201.466-.566%202.84-1.593%203.865l-1.323%201.321a1.334%201.334%200%200%200%201.887%201.886l1.321-1.322a8.076%208.076%200%200%200%202.375-5.749Z'%20clip-rule='evenodd'/%3e%3c/svg%3e"
+              alt="Link checker extension"
+            />
+            <div class="card__description">
+              <h3 class="card__name">LinkChecker</h3>
+              <p class="card__text">
+                Scans and highlights broken links on any page.
+              </p>
+            </div>
+          </div>
+          <div class="card__controls">
+            <button class="card__remove">Remove</button>
+
+            <fieldset class="card__toggle toggle" role="radiogroup">
+              <legend class="visually-hidden">Card activate toggle</legend>
+
+              <div class="toggle__wrapper">
+                <input
+                  id="notActive-linkchecker"
+                  name="activate-toggle-linkchecker"
+                  type="radio"
+                />
+                <input
+                  id="active-linkchecker"
+                  name="activate-toggle-linkchecker"
+                  type="radio"
+                  checked
+                />
+
+                <span class="toggle__background" aria-hidden="true"></span>
+                <span class="toggle__button" aria-hidden="true"></span>
+
+                <label for="notActive-linkchecker" class="visually-hidden">
+                  Deactivate
+                </label>
+                <label for="active-linkchecker" class="visually-hidden">
+                  Activate
+                </label>
+              </div>
+            </fieldset>
+          </div>
+        </div>
+
+        <div class="card">
+          <div class="card__content">
+            <img
+              src="data:image/svg+xml,%3csvg%20xmlns='http://www.w3.org/2000/svg'%20width='60'%20height='60'%20fill='none'%20viewBox='0%200%2060%2060'%3e%3cpath%20fill='%238EECF5'%20d='M0%2010C0%204.477%204.477%200%2010%200h40c5.523%200%2010%204.477%2010%2010v40c0%205.523-4.477%2010-10%2010H10C4.477%2060%200%2055.523%200%2050V10Z'/%3e%3cpath%20fill='%23091540'%20fill-rule='evenodd'%20d='M41.752%2029.78h-.701v-3.07a.58.58%200%200%200-.58-.583h-3.95c-2.357-.014-4.3-1.964-4.3-4.343v-4.185a.594.594%200%200%200-.593-.599h-6.873c-3.204%200-5.804%202.639-5.804%205.863v6.917h-.703a1%201%200%200%200%200%202h23.504a1%201%200%200%200%200-2Z'%20clip-rule='evenodd'/%3e%3cpath%20fill='%23091540'%20fill-rule='evenodd'%20d='M36.69%2024.227c.898.01%202.145.013%203.203.01.542-.002.818-.657.442-1.05-.679-.712-1.624-1.707-2.575-2.704-.953-1.001-1.91-2.008-2.608-2.739-.384-.405-1.057-.126-1.057.434v3.426c0%201.439%201.172%202.623%202.596%202.623Z'%20clip-rule='evenodd'/%3e%3cpath%20fill='%23091540'%20fill-rule='evenodd'%20d='M40.582%2033.333H19.418a.468.468%200%200%200-.468.468v3.076c0%203.38%202.728%206.123%206.075%206.123h10.233c3.206%200%205.792-2.612%205.792-5.836v-3.363a.468.468%200%200%200-.468-.468Z'%20clip-rule='evenodd'%20opacity='.4'/%3e%3c/svg%3e"
+              alt="DOM Snapshot extension"
+            />
+            <div class="card__description">
+              <h3 class="card__name">DOM Snapshot</h3>
+              <p class="card__text">
+                Capture and export DOM structures quickly.
+              </p>
+            </div>
+          </div>
+          <div class="card__controls">
+            <button class="card__remove">Remove</button>
+
+            <fieldset class="card__toggle toggle" role="radiogroup">
+              <legend class="visually-hidden">Card activate toggle</legend>
+
+              <div class="toggle__wrapper">
+                <input
+                  id="notActive-domsnapshot"
+                  name="activate-toggle-domsnapshot"
+                  type="radio"
+                />
+                <input
+                  id="active-domsnapshot"
+                  name="activate-toggle-domsnapshot"
+                  type="radio"
+                  checked
+                />
+
+                <span class="toggle__background" aria-hidden="true"></span>
+                <span class="toggle__button" aria-hidden="true"></span>
+
+                <label for="notActive-domsnapshot" class="visually-hidden">
+                  Deactivate
+                </label>
+                <label for="active-domsnapshot" class="visually-hidden">
+                  Activate
+                </label>
+              </div>
+            </fieldset>
+          </div>
+        </div>
+
+        <div class="card">
+          <div class="card__content">
+            <img
+              src="data:image/svg+xml,%3csvg%20xmlns='http://www.w3.org/2000/svg'%20width='60'%20height='60'%20fill='none'%20viewBox='0%200%2060%2060'%3e%3cpath%20fill='%23B9FBC0'%20d='M0%2010C0%204.477%204.477%200%2010%200h40c5.523%200%2010%204.477%2010%2010v40c0%205.523-4.477%2010-10%2010H10C4.477%2060%200%2055.523%200%2050V10Z'/%3e%3cpath%20fill='%23091540'%20fill-rule='evenodd'%20d='M35.363%2035.255h-4.406a1%201%200%200%201%200-2h4.406a1%201%200%200%201%200%202Zm-6.855-4.222-3.163%203.163a.992.992%200%200%201-.706.293.999.999%200%200%201-.707-1.707l2.456-2.455-2.456-2.456a1%201%200%200%201%201.413-1.415l3.163%203.163a1%201%200%200%201%200%201.414Zm7.116-13.7H24.377c-4.213%200-7.044%202.96-7.044%207.368v10.596c0%204.408%202.83%207.37%207.044%207.37h11.246c4.213%200%207.044-2.962%207.044-7.37V24.701c0-4.408-2.831-7.368-7.043-7.368Z'%20clip-rule='evenodd'/%3e%3c/svg%3e"
+              alt="Console Plus extension"
+            />
+            <div class="card__description">
+              <h3 class="card__name">ConsolePlus</h3>
+              <p class="card__text">
+                Enhanced developer console with advanced filtering and logging.
+              </p>
+            </div>
+          </div>
+          <div class="card__controls">
+            <button class="card__remove">Remove</button>
+
+            <fieldset class="card__toggle toggle" role="radiogroup">
+              <legend class="visually-hidden">Card activate toggle</legend>
+
+              <div class="toggle__wrapper">
+                <input
+                  id="notActive-consoleplus"
+                  name="activate-toggle-consoleplus"
+                  type="radio"
+                />
+                <input
+                  id="active-consoleplus"
+                  name="activate-toggle-consoleplus"
+                  type="radio"
+                  checked
+                />
+
+                <span class="toggle__background" aria-hidden="true"></span>
+                <span class="toggle__button" aria-hidden="true"></span>
+
+                <label for="notActive-consoleplus" class="visually-hidden">
+                  Deactivate
+                </label>
+                <label for="active-consoleplus" class="visually-hidden">
+                  Activate
+                </label>
+              </div>
+            </fieldset>
+          </div>
+        </div>
+      </section>
+
+      <section class="reset">
+        <button id="resetBtn" class="reset__button">
+          Reset removed cards
+        </button>
+      </section>
+    </main>
+  </body>
+</html>
