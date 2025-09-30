@@ -1,4 +1,4 @@
-import "../src/style.scss";
+import "./style.css";
 
 // Toggle theme
 /* 
