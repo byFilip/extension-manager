@@ -1,4 +1,4 @@
-console.log("main loaded");
+console.log("test");
 
 import "./style.scss";
 import { initializeTheme, setupThemeToggle } from "./theme.js";
